@@ -18,30 +18,75 @@
   </head>
 
   <body>
-    <!-- ============================================================
-       NAVIGATION BAR
-       Full-width bar with centered content inside a container
-  ============================================================ -->
-    <header class="navbar">
-      <div class="container nav-content">
-        <!-- <div class="logo"> -->
-        <img
-          class="nav-logo"
-          src="assets/logos/atlasEmpire.png"
-          alt="Atlas Empire Logo"
-        />
-        <!-- </div> -->
-        <nav class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
+    <!-- ============================
+     FINAL NAVIGATION HEADER
+============================= -->
+<header class="site-header">
+  <div class="nav-container">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo-link">
+      <img class="nav-logo" src="assets/logos/atlasEmpire.png" alt="Atlas Empire Logo" />
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Programs ▾</a>
+          <div class="dropdown-content">
+            <a href="packages.html">Packages</a>
+            <a href="greatness.html">Greatness</a>
+            <a href="speak.html">Speak Something</a>
+            <a href="career.html">Career Something</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="industries.html">Industries</a>
+            <a href="cities.html">Cities</a>
+          </div>
+        </li>
+
+        <li><a href="app.html">App</a></li>
+        <li><a href="collective.html">Collective</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+
+  <!-- Mobile Slide-Out Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+
+      <li class="mobile-dropdown">
+        <button class="mobile-dropbtn">Programs ▾</button>
+        <div class="mobile-dropdown-content">
           <a href="packages.html">Packages</a>
+          <a href="greatness.html">Greatness</a>
+          <a href="speak.html">Speak Something</a>
+          <a href="career.html">Career Something</a>
+          <a href="testimonials.html">Testimonials</a>
           <a href="industries.html">Industries</a>
-          <a href="app.html">App</a>
           <a href="cities.html">Cities</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
-    </header>
+        </div>
+      </li>
+
+      <li><a href="app.html">App</a></li>
+      <li><a href="collective.html">Collective</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
     <!-- ============================================
      BOSS SOMETHING – GLOBAL COLLECTIVE SECTION
      Intro + Repeating City CTA Blocks
@@ -524,5 +569,37 @@
         © Atlas Empire | All Rights Reserved | Privacy Policy | Terms of Use
       </div>
     </footer>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const mobileDropdownBtns = document.querySelectorAll(".mobile-dropbtn");
+
+  console.log("hamburger:", hamburger);
+  console.log("mobileMenu:", mobileMenu);
+
+  if (!hamburger || !mobileMenu) {
+    console.warn("Nav elements not found on this page.");
+    return;
+  }
+
+  hamburger.addEventListener("click", () => {
+    const isOpen = mobileMenu.style.display === "block";
+    mobileMenu.style.display = isOpen ? "none" : "block";
+    console.log("Hamburger clicked. Menu open:", !isOpen);
+  });
+
+  mobileDropdownBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const content = btn.nextElementSibling;
+      if (!content) return;
+      const isOpen = content.style.display === "block";
+      content.style.display = isOpen ? "none" : "block";
+    });
+  });
+});
+</script>
+
+
   </body>
 </html>
