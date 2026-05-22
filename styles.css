@@ -117,13 +117,17 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
- background: rgba(0, 0, 0, 0.45); /* translucent black */
-  backdrop-filter: blur(6px);      /* optional glass effect */
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
   padding: 10px 0;
   border-radius: 6px;
-  top: 30px;
+  top: 100%;        /* instead of 30px */
+  left: 0;
+  margin-top: 0;    /* removes hover gap */
   min-width: 180px;
+  z-index: 9999;
 }
+
 
 .dropdown-content a {
   display: block;
