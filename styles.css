@@ -66,7 +66,7 @@ body {
   z-index: 99999;
 
   background: rgba(0, 0, 0, 0.45); /* translucent black */
-  backdrop-filter: blur(6px);      /* optional glass effect */
+  backdrop-filter: blur(6px); /* optional glass effect */
 }
 
 .nav-container {
@@ -87,7 +87,6 @@ body {
   max-width: 140px;
   height: auto;
 }
-
 
 /* ============================
    DESKTOP NAV
@@ -121,13 +120,12 @@ body {
   backdrop-filter: blur(6px);
   padding: 10px 0;
   border-radius: 6px;
-  top: 100%;        /* instead of 30px */
+  top: 100%; /* instead of 30px */
   left: 0;
-  margin-top: 0;    /* removes hover gap */
+  margin-top: 0; /* removes hover gap */
   min-width: 180px;
   z-index: 9999;
 }
-
 
 .dropdown-content a {
   display: block;
@@ -169,7 +167,7 @@ body {
   left: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.45); /* translucent black */
-  backdrop-filter: blur(6px);      /* optional glass effect */
+  backdrop-filter: blur(6px); /* optional glass effect */
   padding: 20px;
   z-index: 999999; /* sits above all content */
 }
@@ -221,75 +219,69 @@ body {
   }
 }
 
-
 /* ============================================================
-   HERO SECTION — MATCH OLD SITE CONTENT
+   HERO SECTION — MATCH OLD SITE LOOK
 ============================================================ */
 
 .hero {
-  padding: 100px 0;
+  padding: 40px 0 0 0; /* tighter top spacing like old site */
+  min-height: 520px; /* tall hero like old site */
+  background: linear-gradient(90deg, #ff4da6 0%, #b03bff 100%);
+  display: flex;
+  align-items: center;
 }
 
 .hero-inner {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 20px;
+  padding: 0 40px;
 }
 
 /* LEFT SIDE */
 .hero-text {
   flex: 1;
+  margin-top: 20px; /* pushes text up like old site */
 }
 
 .hero-tag {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  color: #4dd6ff; /* bright blue like old site */
+  color: #4dd6ff;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.hero-title {
-  font-size: 3.2rem;
-  font-weight: 900;
-  line-height: 1.1;
-  margin-bottom: 20px;
-}
-
-.hero-success .dollar {
-  color: #00ff85; /* neon green */
-  font-size: 3.4rem;
-}
-
-.something-green {
-  color: #00ff85;
+.hero-logo-main {
+  width: 420px; /* bigger like old site */
+  margin: 10px 0;
+  display: block;
 }
 
 .hero-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   max-width: 420px;
-  opacity: 0.9;
+  opacity: 0.95;
+  margin-top: 10px;
 }
 
 /* RIGHT SIDE IMAGE */
 .hero-visual {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .hero-img {
   width: 100%;
-  max-width: 420px;
-  border-radius: 20px;
-  object-fit: cover;
-}
-
-.hero-logo-main {
-  width: 320px; /* adjust as needed */
-  margin: 20px 0;
-  display: block;
+  max-width: 520px; /* larger like old site */
+  object-fit: contain;
+  border-radius: 0; /* old site had no rounded corners */
+  margin-right: -20px; /* pushes image to the edge like old site */
 }
 
 /* ============================================================
