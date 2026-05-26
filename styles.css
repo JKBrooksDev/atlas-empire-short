@@ -384,6 +384,7 @@ body {
 
 .grant-info {
   padding: 100px 0;
+  background: linear-gradient(90deg, #0cc0df, #ffde59);
 }
 
 .grant-info-inner {
@@ -2164,6 +2165,13 @@ section {
 /* ============================================================
    THREE STEPS SECTION
 ============================================================ */
+
+@media (max-width: 1024px) and (min-width: 600px) {
+  .step-photo {
+    object-position: top center;
+  }
+}
+
 
 @media (max-width: 900px) {
   .steps-grid {
