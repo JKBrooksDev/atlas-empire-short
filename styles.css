@@ -501,6 +501,7 @@ body {
 .steps-section {
   padding: 100px 0;
   text-align: center;
+  background: radial-gradient(#ff5757, #8c52ff 70%);
 }
 
 .steps-title {
