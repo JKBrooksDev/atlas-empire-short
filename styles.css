@@ -322,6 +322,7 @@ body {
 
 .grant-promo {
   padding: 100px 0;
+  background: linear-gradient(90deg, #ff4da6 0%, #b03bff 60%);
 }
 
 .promo-inner {
