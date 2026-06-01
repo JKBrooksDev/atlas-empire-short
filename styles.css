@@ -2362,6 +2362,12 @@ INDUSTRY RESPONSIVE BREAKPOINTS
 /* ============================================================
    SPEAK SOMETHING™ RESPONSIVE BREAKPOINTS
 ============================================================ */
+/* Desktop */
+@media (min-width: 1025px) {
+  .speak-big-graphic {
+    max-width: 600px; /* adjust to the size you want */
+  }
+}
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -2372,6 +2378,15 @@ INDUSTRY RESPONSIVE BREAKPOINTS
   .speak-main {
     flex-direction: column;
     text-align: center;
+  }
+
+  .speak-left {
+    display: flex;
+    justify-content: center; /* centers the image container */
+  }
+
+  .speak-big-graphic {
+    margin: 0 auto; /* ensures the image itself centers */
   }
 
   .speak-right {
@@ -2393,8 +2408,25 @@ INDUSTRY RESPONSIVE BREAKPOINTS
     width: 260px;
   }
 
+ .speak-main {
+    flex-direction: column;
+    align-items: center; /* forces perfect centering */
+    justify-content: center;
+    text-align: center;
+  }
+
   .speak-big-graphic {
+    margin: 0 auto;
+    display: block;
     max-width: 300px;
+  }
+
+  .speak-left,
+  .speak-right {
+    flex: unset; /* removes the flex:1 imbalance */
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .speak-person {
