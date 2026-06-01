@@ -2619,9 +2619,24 @@ INDUSTRY RESPONSIVE BREAKPOINTS
   }
 }
 
+@media (min-width: 433px) and (max-width: 900px) {
+  .fix {
+    object-position: top center; /* pulls faces into view */
+  }
+}
+
+
 /* ============================================
    CHANGING THE WORLD RESPONSIVE
    ============================================ */
+
+   @media (min-width: 1025px) {
+  .boss-intro-image img {
+    max-width: 650px; /* adjust this number until it looks perfect */
+  }
+}
+
+
 @media (max-width: 900px) {
   .changing-world-content {
     flex-direction: column;
