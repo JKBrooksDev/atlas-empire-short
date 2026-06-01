@@ -926,6 +926,12 @@ body {
   margin-bottom: 12px;
 }
 
+.speak-img-3 {
+  object-fit: cover;
+  object-position: top center; /* keeps her face in view */
+}
+
+
 .speak-card-text {
   font-size: 1rem;
   font-weight: 600;
