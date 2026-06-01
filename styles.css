@@ -945,6 +945,7 @@ body {
   width: 320px;
   margin: 40px auto;
   display: block;
+  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.6));
 }
 
 /* ------------------------------
