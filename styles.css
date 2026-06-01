@@ -634,6 +634,40 @@ body {
   margin-top: 10px;
 }
 
+/* DEFAULT = DESKTOP (button under price) */
+.package-bottom {
+  display: flex;
+  flex-direction: column;   /* <-- THIS is the key */
+  align-items: stretch; /* makes button full width like old site */
+  gap: 12px;
+  margin-top: 25px;
+}
+
+/* Price styling stays as-is */
+.package-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* Button styling */
+.package-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #1a73e8;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.25s ease;
+  align-self: center; /* centers button in column layout */
+}
+
+.package-btn:hover {
+  background: #0f5ec4;
+  transform: translateY(-2px);
+}
+
 /* POPULAR BADGE */
 .package-box.popular {
   border: 3px solid #ceff06;
@@ -1953,14 +1987,21 @@ section {
   height: 100vh;
   background: linear-gradient(135deg, #6a0dad, #1e90ff);
   /* uses your site gradient */
-  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
+/* Center the coming-soon content */
 .coming-soon-wrapper {
+  flex: 1; /* take remaining space below header */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   max-width: 700px;
+  margin: 0 auto;
   padding: 40px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -2210,6 +2251,29 @@ MOBILE PACKAGES SECTION
 @media (max-width: 900px) {
   .packages-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ⭐ TABLET: button beside price */
+@media (max-width: 900px) and (min-width: 601px) {
+  .package-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* ⭐ MOBILE: button under price again */
+@media (max-width: 600px) {
+  .package-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .package-btn {
+    width: 100%;
+    text-align: center;
   }
 }
 
