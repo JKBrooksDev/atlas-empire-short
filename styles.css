@@ -874,6 +874,19 @@ body {
   margin-bottom: 12px;
 }
 
+.industry-img-1 {
+  object-fit: cover;
+  object-position: 50% 30%; /* keeps the important part in view */
+  transform: scale(1); /* ensures no accidental zoom */
+}
+
+.industry-img-6 {
+  object-fit: cover;
+  object-position: 50% 20%; /* keeps the important part in view */
+  transform: scale(1); /* ensures no accidental zoom */
+}
+
+
 /* LABEL */
 .industry-label {
   font-size: 1rem;
