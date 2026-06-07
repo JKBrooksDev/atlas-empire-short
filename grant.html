@@ -126,31 +126,31 @@
         <h2 class="grant-section-title">Personal Information</h2>
 
         <label>Full Name</label>
-        <input type="text" name="fullName" required />
+        <input type="text" name="FullName" required />
 
         <label>Business/Organization Name</label>
-        <input type="text" name="businessName" />
+        <input type="text" name="BusinessName" />
 
         <label>Title/Position</label>
-        <input type="text" name="title" />
+        <input type="text" name="Title-Position" />
 
         <label>Email Address</label>
-        <input type="email" name="email" required />
+        <input type="email" name="Email" required />
 
         <label>Phone Number</label>
-        <input type="text" name="phone" />
+        <input type="text" name="Phone" />
 
         <label>City, State, Country</label>
-        <input type="text" name="location" />
+        <input type="text" name="City-State-Country" />
 
         <label>Website and/or Social Media Links</label>
-        <textarea name="links"></textarea>
+        <textarea name="Links"></textarea>
 
         <!-- BUSINESS PROFILE -->
         <h2 class="grant-section-title">Business Profile</h2>
 
         <label>How long have you been in business?</label>
-        <select name="years">
+        <select name="YearsInBusiness">
           <option>Less than 1 year</option>
           <option>1–3 years</option>
           <option>4–7 years</option>
@@ -159,7 +159,7 @@
         </select>
 
         <label>What is your current business structure?</label>
-        <select name="structure">
+        <select name="BusinessStructure">
           <option>Sole Proprietorship</option>
           <option>LLC</option>
           <option>Corporation</option>
@@ -169,7 +169,7 @@
         </select>
 
         <label>Which industry best describes your business?</label>
-        <select name="industry">
+        <select name="Industry">
           <option>Technology</option>
           <option>Finance</option>
           <option>Education</option>
@@ -186,7 +186,7 @@
         </select>
 
         <label>What stage is your business currently in?</label>
-        <select name="stage">
+        <select name="BusinessStage">
           <option>Idea Stage</option>
           <option>Startup</option>
           <option>Growth</option>
@@ -196,7 +196,7 @@
         </select>
 
         <label>How many team members or employees do you currently have?</label>
-        <select name="team">
+        <select name="TeamSize">
           <option>Just Me</option>
           <option>2–5</option>
           <option>6–10</option>
@@ -206,7 +206,7 @@
         </select>
 
         <label>What is your current annual revenue?</label>
-        <select name="revenue">
+        <select name="AnnualRevenue">
           <option>Pre-Revenue</option>
           <option>Under $25,000</option>
           <option>$25,000–$99,999</option>
@@ -226,59 +226,59 @@
 
         <div class="checkbox-group" id="business-needs">
           <label
-            ><input type="checkbox" name="needs" value="Funding" />
+            ><input type="checkbox" name="BusinessNeeds" value="Funding" />
             Funding</label
           >
           <label
-            ><input type="checkbox" name="needs" value="Marketing" />
+            ><input type="checkbox" name="BusinessNeeds" value="Marketing" />
             Marketing</label
           >
           <label
-            ><input type="checkbox" name="needs" value="Staffing" />
+            ><input type="checkbox" name="BusinessNeeds" value="Staffing" />
             Staffing</label
           >
           <label
-            ><input type="checkbox" name="needs" value="Technology" />
+            ><input type="checkbox" name="BusinessNeeds" value="Technology" />
             Technology</label
           >
           <label
-            ><input type="checkbox" name="needs" value="Sales" /> Sales</label
+            ><input type="checkbox" name="BusinessNeeds" value="Sales" /> Sales</label
           >
           <label
-            ><input type="checkbox" name="needs" value="Partnerships" />
+            ><input type="checkbox" name="BusinessNeeds" value="Partnerships" />
             Partnerships</label
           >
           <label
-            ><input type="checkbox" name="needs" value="Mentorship" />
+            ><input type="checkbox" name="BusinessNeeds" value="Mentorship" />
             Mentorship</label
           >
           <label
-            ><input type="checkbox" name="needs" value="Operations" />
+            ><input type="checkbox" name="BusinessNeeds" value="Operations" />
             Operations</label
           >
           <label
-            ><input type="checkbox" name="needs" value="Legal Support" /> Legal
+            ><input type="checkbox" name="BusinessNeeds" value="Legal Support" /> Legal
             Support</label
           >
           <label
-            ><input type="checkbox" name="needs" value="Real Estate" /> Real
+            ><input type="checkbox" name="BusinessNeeds" value="Real Estate" /> Real
             Estate</label
           >
           <label
-            ><input type="checkbox" name="needs" value="Business Development" />
+            ><input type="checkbox" name="BusinessNeeds" value="Business Development" />
             Business Development</label
           >
         </div>
 
         <label>Are you currently seeking funding or investment?</label>
-        <select name="seekingFunding">
+        <select name="SeekingFunding">
           <option>Yes</option>
           <option>No</option>
           <option>In the Future</option>
         </select>
 
         <label>How much funding would significantly impact your growth?</label>
-        <select name="fundingAmount">
+        <select name="FundingAmount">
           <option>Under $10,000</option>
           <option>$10,000–$50,000</option>
           <option>$50,000–$100,000</option>
@@ -287,7 +287,7 @@
         </select>
 
         <label>Which markets do you currently serve?</label>
-        <select name="markets">
+        <select name="CurrentMarket">
           <option>Local</option>
           <option>Regional</option>
           <option>National</option>
@@ -295,7 +295,7 @@
         </select>
 
         <label>Are you interested in expanding nationally or globally?</label>
-        <select name="expansion">
+        <select name="ExpansionInterest">
           <option>Yes</option>
           <option>No</option>
           <option>Maybe</option>
@@ -305,7 +305,7 @@
         <h2 class="grant-section-title">Leadership & Compatibility</h2>
 
         <label>Which leadership style best describes you?</label>
-        <select name="leadership">
+        <select name="LeadershipStyle">
           <option>Visionary</option>
           <option>Strategist</option>
           <option>Creative</option>
@@ -316,7 +316,7 @@
         </select>
 
         <label>What motivates you most?</label>
-        <select name="motivation">
+        <select name="Motivation">
           <option>Purpose</option>
           <option>Profit</option>
           <option>Freedom</option>
@@ -332,37 +332,37 @@
 
         <div class="checkbox-group" id="business-values">
           <label
-            ><input type="checkbox" name="values" value="Trust" /> Trust</label
+            ><input type="checkbox" name="BusinessValues" value="Trust" /> Trust</label
           >
           <label
-            ><input type="checkbox" name="values" value="Integrity" />
+            ><input type="checkbox" name="BusinessValues" value="Integrity" />
             Integrity</label
           >
           <label
-            ><input type="checkbox" name="values" value="Excellence" />
+            ><input type="checkbox" name="BusinessValues" value="Excellence" />
             Excellence</label
           >
           <label
-            ><input type="checkbox" name="values" value="Innovation" />
+            ><input type="checkbox" name="BusinessValues" value="Innovation" />
             Innovation</label
           >
           <label
-            ><input type="checkbox" name="values" value="Accountability" />
+            ><input type="checkbox" name="BusinessValues" value="Accountability" />
             Accountability</label
           >
           <label
-            ><input type="checkbox" name="values" value="Diversity" />
+            ><input type="checkbox" name="BusinessValues" value="Diversity" />
             Diversity</label
           >
           <label
-            ><input type="checkbox" name="values" value="Faith" /> Faith</label
+            ><input type="checkbox" name="BusinessValues" value="Faith" /> Faith</label
           >
           <label
-            ><input type="checkbox" name="values" value="Service" />
+            ><input type="checkbox" name="BusinessValues" value="Service" />
             Service</label
           >
           <label
-            ><input type="checkbox" name="values" value="Respect" />
+            ><input type="checkbox" name="BusinessValues" value="Respect" />
             Respect</label
           >
         </div>
@@ -373,27 +373,27 @@
           <label
             ><input
               type="checkbox"
-              name="collaborate[]"
+              name="CollaborationTypes"
               value="Entrepreneurs"
             />
             Entrepreneurs</label
           >
           <label
-            ><input type="checkbox" name="collaborate[]" value="Executives" />
+            ><input type="checkbox" name="CollaborationTypes" value="Executives" />
             Executives</label
           >
           <label
-            ><input type="checkbox" name="collaborate[]" value="Creatives" />
+            ><input type="checkbox" name="CollaborationTypes" value="Creatives" />
             Creatives</label
           >
           <label
-            ><input type="checkbox" name="collaborate[]" value="Investors" />
+            ><input type="checkbox" name="CollaborationTypes" value="Investors" />
             Investors</label
           >
           <label
             ><input
               type="checkbox"
-              name="collaborate[]"
+              name="CollaborationTypes"
               value="Community Leaders"
             />
             Community Leaders</label
@@ -401,7 +401,7 @@
           <label
             ><input
               type="checkbox"
-              name="collaborate[]"
+              name="CollaborationTypes"
               value="Nonprofit Leaders"
             />
             Nonprofit Leaders</label
@@ -409,7 +409,7 @@
           <label
             ><input
               type="checkbox"
-              name="collaborate[]"
+              name="CollaborationTypes"
               value="Faith Leaders"
             />
             Faith Leaders</label
@@ -417,7 +417,7 @@
         </div>
 
         <label>When challenges arise, how do you typically respond?</label>
-        <select name="response">
+        <select name="ChallengeResponse">
           <option>Take Immediate Action</option>
           <option>Gather Information First</option>
           <option>Seek Advice</option>
@@ -429,7 +429,7 @@
           >How important is cultural diversity in your business
           relationships?</label
         >
-        <select name="diversity">
+        <select name="DiversityImportance">
           <option>Not Important</option>
           <option>Somewhat Important</option>
           <option>Important</option>
@@ -446,31 +446,31 @@
           <label
             ><input
               type="checkbox"
-              name="relationships[]"
+              name="RelationshipTypes"
               value="Strategic Partners"
             />
             Strategic Partners</label
           >
           <label
-            ><input type="checkbox" name="relationships[]" value="Investors" />
+            ><input type="checkbox" name="RelationshipTypes" value="Investors" />
             Investors</label
           >
           <label
-            ><input type="checkbox" name="relationships[]" value="Mentors" />
+            ><input type="checkbox" name="RelationshipTypes" value="Mentors" />
             Mentors</label
           >
           <label
-            ><input type="checkbox" name="relationships[]" value="Clients" />
+            ><input type="checkbox" name="RelationshipTypes" value="Clients" />
             Clients</label
           >
           <label
-            ><input type="checkbox" name="relationships[]" value="Vendors" />
+            ><input type="checkbox" name="RelationshipTypes" value="Vendors" />
             Vendors</label
           >
           <label
             ><input
               type="checkbox"
-              name="relationships[]"
+              name="RelationshipTypes"
               value="Joint Venture Partners"
             />
             Joint Venture Partners</label
@@ -478,19 +478,19 @@
           <label
             ><input
               type="checkbox"
-              name="relationships[]"
+              name="RelationshipTypes"
               value="Team Members"
             />
             Team Members</label
           >
           <label
-            ><input type="checkbox" name="relationships[]" value="Friends" />
+            ><input type="checkbox" name="RelationshipTypes" value="Friends" />
             Friends</label
           >
           <label
             ><input
               type="checkbox"
-              name="relationships[]"
+              name="RelationshipTypes"
               value="Accountability Partners"
             />
             Accountability Partners</label
@@ -498,13 +498,13 @@
         </div>
 
         <label>Are you interested in speaking opportunities?</label>
-        <select name="speaking">
+        <select name="SpeakingOpportunities">
           <option>Yes</option>
           <option>No</option>
         </select>
 
         <label>Are you interested in grant opportunities and resources?</label>
-        <select name="grants">
+        <select name="GrantOpportunities">
           <option>Yes</option>
           <option>No</option>
         </select>
@@ -513,7 +513,7 @@
           >Are you interested in being featured in media, podcasts, magazines,
           or events?</label
         >
-        <select name="media">
+        <select name="MediaFeatures">
           <option>Yes</option>
           <option>No</option>
         </select>
@@ -522,30 +522,30 @@
           >What skills, products, services, or resources can you offer to
           others?</label
         >
-        <textarea name="offer"></textarea>
+        <textarea name="Offering"></textarea>
 
         <label
           >What skills, products, services, or resources are you seeking?</label
         >
-        <textarea name="seeking"></textarea>
+        <textarea name="Seeking"></textarea>
 
         <!-- VISION & FUTURE -->
         <h2 class="grant-section-title">Vision & Future</h2>
 
         <label>What are your top three goals for the next 12 months?</label>
-        <textarea name="goals"></textarea>
+        <textarea name="Goals"></textarea>
 
         <label
           >Where do you see yourself and your business in the next 3–5
           years?</label
         >
-        <textarea name="future"></textarea>
+        <textarea name="Future"></textarea>
 
         <label>What does success look like to you?</label>
-        <textarea name="success"></textarea>
+        <textarea name="Success"></textarea>
 
         <label>Anything else you'd like us to know?</label>
-        <textarea name="extra"></textarea>
+        <textarea name="Extra"></textarea>
 
         <button type="submit" class="grant-submit-btn">
           Submit Application
