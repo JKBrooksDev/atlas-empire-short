@@ -21,86 +21,89 @@
     <!-- ============================
      FINAL NAVIGATION HEADER
 ============================= -->
-<header class="site-header">
-  <div class="nav-container">
+    <header class="site-header">
+      <div class="nav-container">
+        <!-- Logo -->
+        <a href="index.html" class="logo-link">
+          <img
+            class="nav-logo"
+            src="assets/logos/atlasEmpire.png"
+            alt="Atlas Empire Logo"
+          />
+        </a>
 
-    <!-- Logo -->
-    <a href="index.html" class="logo-link">
-      <img class="nav-logo" src="assets/logos/atlasEmpire.png" alt="Atlas Empire Logo" />
-    </a>
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
 
-    <!-- Desktop Navigation -->
-    <nav class="desktop-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Programs ▾</a>
+              <div class="dropdown-content">
+                <a href="packages.html">Packages</a>
+                <a href="industries.html">Industries</a>
+                <a href="cities.html">Cities</a>
+              </div>
+            </li>
+            <li><a href="app.html">App</a></li>
+            <li><a href="collective.html">Collective</a></li>
+            <li><a href="grant.html">Get The Grant</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
 
-        <li class="dropdown">
-          <a href="#" class="dropbtn">Programs ▾</a>
-          <div class="dropdown-content">
-            <a href="packages.html">Packages</a>
-            <a href="industries.html">Industries</a>
-            <a href="cities.html">Cities</a>
-          </div>
-        </li>
-
-        <li><a href="app.html">App</a></li>
-        <li><a href="collective.html">Collective</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- Mobile Hamburger -->
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-  </div>
-
-  <!-- Mobile Slide-Out Menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-
-      <li class="mobile-dropdown">
-        <button class="mobile-dropbtn">Programs ▾</button>
-        <div class="mobile-dropdown-content">
-          <a href="packages.html">Packages</a>
-          <a href="industries.html">Industries</a>
-          <a href="cities.html">Cities</a>
+        <!-- Mobile Hamburger -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </li>
+      </div>
 
-      <li><a href="app.html">App</a></li>
-      <li><a href="collective.html">Collective</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</header>
+      <!-- Mobile Slide-Out Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
 
+          <li class="mobile-dropdown">
+            <button class="mobile-dropbtn">Programs ▾</button>
+            <div class="mobile-dropdown-content">
+              <a href="packages.html">Packages</a>
+              <a href="industries.html">Industries</a>
+              <a href="cities.html">Cities</a>
+            </div>
+          </li>
+
+          <li><a href="app.html">App</a></li>
+          <li><a href="collective.html">Collective</a></li>
+          <li><a href="grant.html">Get The Grant</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
 
     <section class="hero">
-  <div class="hero-inner">
-    <div class="hero-text">
-      <h4 class="hero-tag">DO YOUR THING BOSS!</h4>
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h4 class="hero-tag">DO YOUR THING BOSS!</h4>
 
-      <img
-        src="assets/logos/successSomething.png"
-        alt="Success Something Logo"
-        class="hero-logo-main"
-      />
+          <img
+            src="assets/logos/successSomething.png"
+            alt="Success Something Logo"
+            class="hero-logo-main"
+          />
 
-      <p class="hero-subtitle">
-        Empowering you to take your next step with confidence and opportunity.
-      </p>
-    </div>
+          <p class="hero-subtitle">
+            Empowering you to take your next step with confidence and
+            opportunity.
+          </p>
+        </div>
 
-    <div class="hero-visual">
-      <img src="assets/hero.png" alt="Hero Woman" class="hero-img" />
-    </div>
-  </div>
-</section>
+        <div class="hero-visual">
+          <img src="assets/hero.png" alt="Hero Woman" class="hero-img" />
+        </div>
+      </div>
+    </section>
 
     <!-- ============================================================
      PROGRAM LOGO GRID (6-TILE SECTION)
@@ -517,37 +520,35 @@ START SOMETHING RESOURCE GRANT — INFO SECTION
         © Atlas Empire | All Rights Reserved | Privacy Policy | Terms of Use
       </div>
     </footer>
-   <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const hamburger = document.getElementById("hamburger");
-  const mobileMenu = document.getElementById("mobileMenu");
-  const mobileDropdownBtns = document.querySelectorAll(".mobile-dropbtn");
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const mobileDropdownBtns = document.querySelectorAll(".mobile-dropbtn");
 
-  console.log("hamburger:", hamburger);
-  console.log("mobileMenu:", mobileMenu);
+        console.log("hamburger:", hamburger);
+        console.log("mobileMenu:", mobileMenu);
 
-  if (!hamburger || !mobileMenu) {
-    console.warn("Nav elements not found on this page.");
-    return;
-  }
+        if (!hamburger || !mobileMenu) {
+          console.warn("Nav elements not found on this page.");
+          return;
+        }
 
-  hamburger.addEventListener("click", () => {
-    const isOpen = mobileMenu.style.display === "block";
-    mobileMenu.style.display = isOpen ? "none" : "block";
-    console.log("Menu display:", mobileMenu.style.display);
+        hamburger.addEventListener("click", () => {
+          const isOpen = mobileMenu.style.display === "block";
+          mobileMenu.style.display = isOpen ? "none" : "block";
+          console.log("Menu display:", mobileMenu.style.display);
+        });
 
-  });
-
-  mobileDropdownBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const content = btn.nextElementSibling;
-      if (!content) return;
-      const isOpen = content.style.display === "block";
-      content.style.display = isOpen ? "none" : "block";
-    });
-  });
-});
-</script>
-
+        mobileDropdownBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const content = btn.nextElementSibling;
+            if (!content) return;
+            const isOpen = content.style.display === "block";
+            content.style.display = isOpen ? "none" : "block";
+          });
+        });
+      });
+    </script>
   </body>
 </html>

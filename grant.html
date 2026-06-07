@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas Empire – Get The Grant!</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/logos/successSomethingOrange.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ============================================================
+       NAVIGATION BAR
+       Full-width bar with centered content inside a container
+  ============================================================ -->
+    <!-- ============================
+     FINAL NAVIGATION HEADER
+============================= -->
+    <header class="site-header">
+      <div class="nav-container">
+        <!-- Logo -->
+        <a href="index.html" class="logo-link">
+          <img
+            class="nav-logo"
+            src="assets/logos/atlasEmpire.png"
+            alt="Atlas Empire Logo"
+          />
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Programs ▾</a>
+              <div class="dropdown-content">
+                <a href="packages.html">Packages</a>
+                <a href="greatness.html">Greatness</a>
+                <a href="speak.html">Speak Something</a>
+                <a href="career.html">Career Something</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="industries.html">Industries</a>
+                <a href="cities.html">Cities</a>
+              </div>
+            </li>
+
+            <li><a href="app.html">App</a></li>
+            <li><a href="collective.html">Collective</a></li>
+            <li><a href="grant.html">Get The Grant</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Mobile Hamburger -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- Mobile Slide-Out Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li class="mobile-dropdown">
+            <button class="mobile-dropbtn">Programs ▾</button>
+            <div class="mobile-dropdown-content">
+              <a href="packages.html">Packages</a>
+              <a href="greatness.html">Greatness</a>
+              <a href="speak.html">Speak Something</a>
+              <a href="career.html">Career Something</a>
+              <a href="testimonials.html">Testimonials</a>
+              <a href="industries.html">Industries</a>
+              <a href="cities.html">Cities</a>
+            </div>
+          </li>
+
+          <li><a href="app.html">App</a></li>
+          <li><a href="collective.html">Collective</a></li>
+          <li><a href="grant.html">Get The Grant</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="grant-wrapper">
+      <h1 class="grant-title">
+        Atlas Empire™ Start Something Grant Opportunity
+      </h1>
+      <p class="grant-subtitle">
+        Connecting entrepreneurs, professionals, leaders, investors, nonprofits,
+        and visionaries with opportunities, resources, strategic partnerships,
+        and meaningful relationships that support business growth and global
+        impact.
+      </p>
+
+      <form class="grant-form">
+        <!-- PERSONAL INFORMATION -->
+        <h2 class="grant-section-title">Personal Information</h2>
+
+        <label>Full Name</label>
+        <input type="text" name="fullName" required />
+
+        <label>Business/Organization Name</label>
+        <input type="text" name="businessName" />
+
+        <label>Title/Position</label>
+        <input type="text" name="title" />
+
+        <label>Email Address</label>
+        <input type="email" name="email" required />
+
+        <label>Phone Number</label>
+        <input type="text" name="phone" />
+
+        <label>City, State, Country</label>
+        <input type="text" name="location" />
+
+        <label>Website and/or Social Media Links</label>
+        <textarea name="links"></textarea>
+
+        <!-- BUSINESS PROFILE -->
+        <h2 class="grant-section-title">Business Profile</h2>
+
+        <label>How long have you been in business?</label>
+        <select name="years">
+          <option>Less than 1 year</option>
+          <option>1–3 years</option>
+          <option>4–7 years</option>
+          <option>8–15 years</option>
+          <option>15+ years</option>
+        </select>
+
+        <label>What is your current business structure?</label>
+        <select name="structure">
+          <option>Sole Proprietorship</option>
+          <option>LLC</option>
+          <option>Corporation</option>
+          <option>Nonprofit Organization</option>
+          <option>Partnership</option>
+          <option>Other</option>
+        </select>
+
+        <label>Which industry best describes your business?</label>
+        <select name="industry">
+          <option>Technology</option>
+          <option>Finance</option>
+          <option>Education</option>
+          <option>Healthcare</option>
+          <option>Beauty</option>
+          <option>Fashion</option>
+          <option>Retail</option>
+          <option>Hospitality</option>
+          <option>Real Estate</option>
+          <option>Media</option>
+          <option>Professional Services</option>
+          <option>Nonprofit</option>
+          <option>Other</option>
+        </select>
+
+        <label>What stage is your business currently in?</label>
+        <select name="stage">
+          <option>Idea Stage</option>
+          <option>Startup</option>
+          <option>Growth</option>
+          <option>Expansion</option>
+          <option>Scaling</option>
+          <option>Enterprise</option>
+        </select>
+
+        <label>How many team members or employees do you currently have?</label>
+        <select name="team">
+          <option>Just Me</option>
+          <option>2–5</option>
+          <option>6–10</option>
+          <option>11–25</option>
+          <option>26–50</option>
+          <option>50+</option>
+        </select>
+
+        <label>What is your current annual revenue?</label>
+        <select name="revenue">
+          <option>Pre-Revenue</option>
+          <option>Under $25,000</option>
+          <option>$25,000–$99,999</option>
+          <option>$100,000–$249,999</option>
+          <option>$250,000–$499,999</option>
+          <option>$500,000–$999,999</option>
+          <option>$1 Million+</option>
+        </select>
+
+        <!-- GROWTH & SCALING -->
+        <h2 class="grant-section-title">Growth & Scaling</h2>
+
+        <label
+          >What are your top three business needs right now? (Select up to
+          3)</label
+        >
+
+        <div class="checkbox-group" id="business-needs">
+          <label
+            ><input type="checkbox" name="needs" value="Funding" />
+            Funding</label
+          >
+          <label
+            ><input type="checkbox" name="needs" value="Marketing" />
+            Marketing</label
+          >
+          <label
+            ><input type="checkbox" name="needs" value="Staffing" />
+            Staffing</label
+          >
+          <label
+            ><input type="checkbox" name="needs" value="Technology" />
+            Technology</label
+          >
+          <label
+            ><input type="checkbox" name="needs" value="Sales" /> Sales</label
+          >
+          <label
+            ><input type="checkbox" name="needs" value="Partnerships" />
+            Partnerships</label
+          >
+          <label
+            ><input type="checkbox" name="needs" value="Mentorship" />
+            Mentorship</label
+          >
+          <label
+            ><input type="checkbox" name="needs" value="Operations" />
+            Operations</label
+          >
+          <label
+            ><input type="checkbox" name="needs" value="Legal Support" /> Legal
+            Support</label
+          >
+          <label
+            ><input type="checkbox" name="needs" value="Real Estate" /> Real
+            Estate</label
+          >
+          <label
+            ><input type="checkbox" name="needs" value="Business Development" />
+            Business Development</label
+          >
+        </div>
+
+        <label>Are you currently seeking funding or investment?</label>
+        <select name="seekingFunding">
+          <option>Yes</option>
+          <option>No</option>
+          <option>In the Future</option>
+        </select>
+
+        <label>How much funding would significantly impact your growth?</label>
+        <select name="fundingAmount">
+          <option>Under $10,000</option>
+          <option>$10,000–$50,000</option>
+          <option>$50,000–$100,000</option>
+          <option>$100,000–$500,000</option>
+          <option>$500,000+</option>
+        </select>
+
+        <label>Which markets do you currently serve?</label>
+        <select name="markets">
+          <option>Local</option>
+          <option>Regional</option>
+          <option>National</option>
+          <option>International</option>
+        </select>
+
+        <label>Are you interested in expanding nationally or globally?</label>
+        <select name="expansion">
+          <option>Yes</option>
+          <option>No</option>
+          <option>Maybe</option>
+        </select>
+
+        <!-- LEADERSHIP & COMPATIBILITY -->
+        <h2 class="grant-section-title">Leadership & Compatibility</h2>
+
+        <label>Which leadership style best describes you?</label>
+        <select name="leadership">
+          <option>Visionary</option>
+          <option>Strategist</option>
+          <option>Creative</option>
+          <option>Connector</option>
+          <option>Operator</option>
+          <option>Coach</option>
+          <option>Servant Leader</option>
+        </select>
+
+        <label>What motivates you most?</label>
+        <select name="motivation">
+          <option>Purpose</option>
+          <option>Profit</option>
+          <option>Freedom</option>
+          <option>Legacy</option>
+          <option>Impact</option>
+          <option>Faith</option>
+        </select>
+
+        <label
+          >What values are most important to you in business relationships?
+          (Select up to 3)</label
+        >
+
+        <div class="checkbox-group" id="business-values">
+          <label
+            ><input type="checkbox" name="values" value="Trust" /> Trust</label
+          >
+          <label
+            ><input type="checkbox" name="values" value="Integrity" />
+            Integrity</label
+          >
+          <label
+            ><input type="checkbox" name="values" value="Excellence" />
+            Excellence</label
+          >
+          <label
+            ><input type="checkbox" name="values" value="Innovation" />
+            Innovation</label
+          >
+          <label
+            ><input type="checkbox" name="values" value="Accountability" />
+            Accountability</label
+          >
+          <label
+            ><input type="checkbox" name="values" value="Diversity" />
+            Diversity</label
+          >
+          <label
+            ><input type="checkbox" name="values" value="Faith" /> Faith</label
+          >
+          <label
+            ><input type="checkbox" name="values" value="Service" />
+            Service</label
+          >
+          <label
+            ><input type="checkbox" name="values" value="Respect" />
+            Respect</label
+          >
+        </div>
+
+        <label>What type of people do you collaborate with best?</label>
+
+        <div class="checkbox-group" id="collaboration-types">
+          <label
+            ><input
+              type="checkbox"
+              name="collaborate[]"
+              value="Entrepreneurs"
+            />
+            Entrepreneurs</label
+          >
+          <label
+            ><input type="checkbox" name="collaborate[]" value="Executives" />
+            Executives</label
+          >
+          <label
+            ><input type="checkbox" name="collaborate[]" value="Creatives" />
+            Creatives</label
+          >
+          <label
+            ><input type="checkbox" name="collaborate[]" value="Investors" />
+            Investors</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="collaborate[]"
+              value="Community Leaders"
+            />
+            Community Leaders</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="collaborate[]"
+              value="Nonprofit Leaders"
+            />
+            Nonprofit Leaders</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="collaborate[]"
+              value="Faith Leaders"
+            />
+            Faith Leaders</label
+          >
+        </div>
+
+        <label>When challenges arise, how do you typically respond?</label>
+        <select name="response">
+          <option>Take Immediate Action</option>
+          <option>Gather Information First</option>
+          <option>Seek Advice</option>
+          <option>Build a Team Solution</option>
+          <option>Develop a Long-Term Strategy</option>
+        </select>
+
+        <label
+          >How important is cultural diversity in your business
+          relationships?</label
+        >
+        <select name="diversity">
+          <option>Not Important</option>
+          <option>Somewhat Important</option>
+          <option>Important</option>
+          <option>Very Important</option>
+          <option>Essential</option>
+        </select>
+
+        <!-- RELATIONSHIP & NETWORK MATCHING -->
+        <h2 class="grant-section-title">Relationship & Network Matching</h2>
+
+        <label>What types of relationships are you seeking?</label>
+
+        <div class="checkbox-group" id="relationship-types">
+          <label
+            ><input
+              type="checkbox"
+              name="relationships[]"
+              value="Strategic Partners"
+            />
+            Strategic Partners</label
+          >
+          <label
+            ><input type="checkbox" name="relationships[]" value="Investors" />
+            Investors</label
+          >
+          <label
+            ><input type="checkbox" name="relationships[]" value="Mentors" />
+            Mentors</label
+          >
+          <label
+            ><input type="checkbox" name="relationships[]" value="Clients" />
+            Clients</label
+          >
+          <label
+            ><input type="checkbox" name="relationships[]" value="Vendors" />
+            Vendors</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="relationships[]"
+              value="Joint Venture Partners"
+            />
+            Joint Venture Partners</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="relationships[]"
+              value="Team Members"
+            />
+            Team Members</label
+          >
+          <label
+            ><input type="checkbox" name="relationships[]" value="Friends" />
+            Friends</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="relationships[]"
+              value="Accountability Partners"
+            />
+            Accountability Partners</label
+          >
+        </div>
+
+        <label>Are you interested in speaking opportunities?</label>
+        <select name="speaking">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+
+        <label>Are you interested in grant opportunities and resources?</label>
+        <select name="grants">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+
+        <label
+          >Are you interested in being featured in media, podcasts, magazines,
+          or events?</label
+        >
+        <select name="media">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+
+        <label
+          >What skills, products, services, or resources can you offer to
+          others?</label
+        >
+        <textarea name="offer"></textarea>
+
+        <label
+          >What skills, products, services, or resources are you seeking?</label
+        >
+        <textarea name="seeking"></textarea>
+
+        <!-- VISION & FUTURE -->
+        <h2 class="grant-section-title">Vision & Future</h2>
+
+        <label>What are your top three goals for the next 12 months?</label>
+        <textarea name="goals"></textarea>
+
+        <label
+          >Where do you see yourself and your business in the next 3–5
+          years?</label
+        >
+        <textarea name="future"></textarea>
+
+        <label>What does success look like to you?</label>
+        <textarea name="success"></textarea>
+
+        <label>Anything else you'd like us to know?</label>
+        <textarea name="extra"></textarea>
+
+        <button type="submit" class="grant-submit-btn">
+          Submit Application
+        </button>
+      </form>
+    </section>
+
+    <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+    <footer class="footer">
+      <div class="container">
+        © Atlas Empire | All Rights Reserved | Privacy Policy | Terms of Use
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        /* ------------------------------
+     MOBILE NAV LOGIC
+  ------------------------------ */
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const mobileDropdownBtns = document.querySelectorAll(".mobile-dropbtn");
+
+        console.log("hamburger:", hamburger);
+        console.log("mobileMenu:", mobileMenu);
+
+        if (hamburger && mobileMenu) {
+          hamburger.addEventListener("click", () => {
+            const isOpen = mobileMenu.style.display === "block";
+            mobileMenu.style.display = isOpen ? "none" : "block";
+            console.log("Hamburger clicked. Menu open:", !isOpen);
+          });
+
+          mobileDropdownBtns.forEach((btn) => {
+            btn.addEventListener("click", () => {
+              const content = btn.nextElementSibling;
+              if (!content) return;
+              const isOpen = content.style.display === "block";
+              content.style.display = isOpen ? "none" : "block";
+            });
+          });
+        }
+
+        /* ------------------------------
+     LIMIT CHECKBOXES TO 3
+  ------------------------------ */
+        const maxNeeds = 3;
+        const needCheckboxes = document.querySelectorAll(
+          '#business-needs input[type="checkbox"]',
+        );
+
+        needCheckboxes.forEach((box) => {
+          box.addEventListener("change", () => {
+            const checked = document.querySelectorAll(
+              '#business-needs input[type="checkbox"]:checked',
+            );
+            if (checked.length > maxNeeds) {
+              box.checked = false;
+              alert("You can select up to 3 business needs.");
+            }
+          });
+        });
+
+        /* LIMIT VALUES CHECKBOXES TO 3 */
+        const maxValues = 3;
+        const valueCheckboxes = document.querySelectorAll(
+          '#business-values input[type="checkbox"]',
+        );
+
+        valueCheckboxes.forEach((box) => {
+          box.addEventListener("change", () => {
+            const checked = document.querySelectorAll(
+              '#business-values input[type="checkbox"]:checked',
+            );
+            if (checked.length > maxValues) {
+              box.checked = false;
+              alert("You can select up to 3 values.");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
