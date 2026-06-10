@@ -1518,8 +1518,16 @@ body {
   object-position: center 30%;
 }
 
+.city-card[data-city="Fort Worth"] {
+  filter: brightness(0.6) contrast(1.3);
+}
+
 .city-card[data-city="Jamaica"] {
   object-position: center 35%;
+}
+
+.city-card[data-city="Dallas"] {
+  filter: brightness(0.6) contrast(1.3);
 }
 
 .city-card[data-city="Charlotte"] {
@@ -1540,6 +1548,10 @@ body {
 
 .city-card[data-city="Paris"] {
   object-position: center 40%;
+}
+
+.city-card[data-city="Panama"] {
+  filter: brightness(0.6) contrast(1.5);
 }
 
 /* ============================================================
