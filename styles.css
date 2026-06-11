@@ -1519,7 +1519,7 @@ body {
 }
 
 .city-card[data-city="Fort Worth"] {
-  filter: brightness(0.6) contrast(1.3);
+   filter: brightness(0) saturate(100%) invert(32%) sepia(98%) saturate(3000%) hue-rotate(190deg) brightness(100%) contrast(100%);
 }
 
 .city-card[data-city="Jamaica"] {
@@ -1527,7 +1527,7 @@ body {
 }
 
 .city-card[data-city="Dallas"] {
-  filter: brightness(0.6) contrast(1.3);
+  filter: brightness(0) saturate(100%) invert(48%) sepia(92%) saturate(2000%) hue-rotate(-10deg) brightness(100%) contrast(100%);
 }
 
 .city-card[data-city="Charlotte"] {
@@ -1551,7 +1551,7 @@ body {
 }
 
 .city-card[data-city="Panama"] {
-  filter: brightness(0.6) contrast(1.5);
+   filter: brightness(0) saturate(100%) invert(18%) sepia(98%) saturate(5000%) hue-rotate(-5deg) brightness(100%) contrast(100%);
 }
 
 /* ============================================================
