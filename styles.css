@@ -249,8 +249,8 @@ body {
 }
 
 .hero-tag {
-font-family: "Inter", sans-serif;
-font-weight: 100;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
 
   font-size: 1.6rem;
   color: #4dd6ff;
@@ -293,7 +293,6 @@ font-weight: 100;
 .program-grid {
   padding: 80px 0;
   background-color: #f2f2f2;
-
 }
 
 .grid-wrapper {
@@ -329,11 +328,11 @@ font-weight: 100;
 }
 
 .grid-item-five {
- background-color: #e5f1fe;
+  background-color: #e5f1fe;
 }
 
 .grid-item-six {
-  background: linear-gradient(to bottom, #9c4cf1, #f59944,#ff4f9a);
+  background: linear-gradient(to bottom, #9c4cf1, #f59944, #ff4f9a);
 }
 
 .grid-item img {
@@ -384,11 +383,13 @@ font-weight: 100;
   font-size: 1.2rem;
   margin-bottom: 20px;
   max-width: 500px;
+  text-transform: uppercase;
 }
 
 .promo-points {
   list-style: none;
   margin-bottom: 25px;
+  text-transform: uppercase;
 }
 
 .promo-points li {
@@ -396,9 +397,48 @@ font-weight: 100;
   margin-bottom: 8px;
 }
 
-.promo-logo {
+/* .promo-logo {
   width: 260px;
   margin: 20px 0;
+} */
+
+.promo-block {
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+  width: fit-content;
+}
+
+.promo-top-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: absolute;
+  top: 65px; /* lower = increase this number */
+  left: 60%; /* more right = increase this number */
+  transform: translateX(-50%);
+  pointer-events: none;
+  color: goldenrod;
+}
+
+.promo-logo {
+  width: 260px; /* adjust as needed */
+  display: block;
+  margin: 0 auto;
+}
+
+.promo-bottom-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: -65px; /* very tight spacing */
+  color: goldenrod;
+}
+
+.promo-description {
+  margin-top: 12px;
+  max-width: 500px;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: center;
 }
 
 /* ============================================================
@@ -413,6 +453,7 @@ font-weight: 100;
 .grant-info {
   padding: 100px 0;
   background: linear-gradient(90deg, #0cc0df, #ffde59);
+  color: #000;
 }
 
 .grant-info-inner {
@@ -431,6 +472,10 @@ font-weight: 100;
   margin-bottom: 10px;
 }
 
+.grant-info-subtitle-top {
+ margin-top: -100px;
+}
+
 .grant-info-subtitle {
   font-size: 1.5rem;
   margin-bottom: 20px;
@@ -445,7 +490,10 @@ font-weight: 100;
 
 .grant-info-list {
   margin-bottom: 20px;
+  margin-left: 30px;
   padding-left: 20px;
+  font-weight: bold;
+
 }
 
 .grant-info-list li {
@@ -453,10 +501,9 @@ font-weight: 100;
   font-size: 1.1rem;
 }
 
-.grant-info-image img {
-  width: 100%;
-  max-width: 420px;
-  border-radius: 16px;
+.info-btn {
+  display: block;
+  margin: 20px auto 0 auto;
 }
 
 /* ============================================================
@@ -665,7 +712,7 @@ font-weight: 100;
 /* DEFAULT = DESKTOP (button under price) */
 .package-bottom {
   display: flex;
-  flex-direction: column;   /* <-- THIS is the key */
+  flex-direction: column; /* <-- THIS is the key */
   align-items: stretch; /* makes button full width like old site */
   gap: 12px;
   margin-top: 25px;
@@ -914,7 +961,6 @@ font-weight: 100;
   transform: scale(1); /* ensures no accidental zoom */
 }
 
-
 /* LABEL */
 .industry-label {
   font-size: 1rem;
@@ -971,7 +1017,6 @@ font-weight: 100;
   object-fit: cover;
   object-position: top center; /* keeps her face in view */
 }
-
 
 .speak-card-text {
   font-size: 1rem;
@@ -1547,7 +1592,8 @@ font-weight: 100;
 }
 
 .city-card[data-city="Fort Worth"] {
-   filter: brightness(0) saturate(100%) invert(32%) sepia(98%) saturate(3000%) hue-rotate(190deg) brightness(100%) contrast(100%);
+  filter: brightness(0) saturate(100%) invert(32%) sepia(98%) saturate(3000%)
+    hue-rotate(190deg) brightness(100%) contrast(100%);
 }
 
 .city-card[data-city="Jamaica"] {
@@ -1555,7 +1601,8 @@ font-weight: 100;
 }
 
 .city-card[data-city="Dallas"] {
-  filter: brightness(0) saturate(100%) invert(48%) sepia(92%) saturate(2000%) hue-rotate(-10deg) brightness(100%) contrast(100%);
+  filter: brightness(0) saturate(100%) invert(48%) sepia(92%) saturate(2000%)
+    hue-rotate(-10deg) brightness(100%) contrast(100%);
 }
 
 .city-card[data-city="Charlotte"] {
@@ -1579,7 +1626,8 @@ font-weight: 100;
 }
 
 .city-card[data-city="Panama"] {
-   filter: brightness(0) saturate(100%) invert(18%) sepia(98%) saturate(5000%) hue-rotate(-5deg) brightness(100%) contrast(100%);
+  filter: brightness(0) saturate(100%) invert(18%) sepia(98%) saturate(5000%)
+    hue-rotate(-5deg) brightness(100%) contrast(100%);
 }
 
 /* ============================================================
@@ -2156,7 +2204,6 @@ section {
   height: 18px;
 }
 
-
 /* ============================================================
    FOOTER
 ============================================================ */
@@ -2351,7 +2398,6 @@ section {
   }
 }
 
-
 @media (max-width: 900px) {
   .steps-grid {
     grid-template-columns: 1fr;
@@ -2538,7 +2584,7 @@ INDUSTRY RESPONSIVE BREAKPOINTS
     width: 260px;
   }
 
- .speak-main {
+  .speak-main {
     flex-direction: column;
     align-items: center; /* forces perfect centering */
     justify-content: center;
@@ -2742,17 +2788,15 @@ INDUSTRY RESPONSIVE BREAKPOINTS
   }
 }
 
-
 /* ============================================
    CHANGING THE WORLD RESPONSIVE
    ============================================ */
 
-   @media (min-width: 1025px) {
+@media (min-width: 1025px) {
   .boss-intro-image img {
     max-width: 650px; /* adjust this number until it looks perfect */
   }
 }
-
 
 @media (max-width: 900px) {
   .changing-world-content {
