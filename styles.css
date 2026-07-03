@@ -473,7 +473,7 @@ body {
 }
 
 .grant-info-subtitle-top {
- margin-top: -100px;
+  margin-top: -100px;
 }
 
 .grant-info-subtitle {
@@ -493,7 +493,6 @@ body {
   margin-left: 30px;
   padding-left: 20px;
   font-weight: bold;
-
 }
 
 .grant-info-list li {
@@ -2143,6 +2142,57 @@ section {
   text-align: center;
   margin-bottom: 10px;
 }
+
+.grant-promo-container {
+  position: relative;
+  text-align: center;   /* centers all text + image */
+  width: fit-content;   /* keeps it tight around the content */
+  margin: 0 auto;       /* centers the entire block on the page */
+}
+
+.grant-promo-top-text {
+  position: absolute;
+  top: 70px;      /* move UP or DOWN (increase to move down) */
+  left: 70%;       /* move RIGHT (increase to move more right) */
+  transform: translateX(-50%);
+  font-weight: 700;
+  font-size: 1.2rem;
+  pointer-events: none;
+  color: goldenrod;
+}
+
+.grant-promo-logo {
+  width: 260px;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.9));
+}
+
+.grant-promo-bottom-text {
+  margin-top: -80px;   /* tighten or loosen spacing */
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: goldenrod;
+}
+
+.grant-promo-bottom-text-two {
+  margin-top: 0px;
+  text-align: center;
+  font-size: 1.7rem;          /* MUCH bigger */
+  font-weight: 900;           /* strongest bold */
+  color: #00ff3c;             /* bright green */
+  padding: 8px 16px;      /* space around the text */
+  border-radius: 8px;     /* rounded corners */
+}
+
+
+.grant-25k {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #00ff3c;
+  /* text-shadow: 0 0 12px rgba(0, 255, 60, 1); */
+}
+
 
 .grant-subtitle {
   text-align: center;
